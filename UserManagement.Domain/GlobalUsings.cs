@@ -1,0 +1,12 @@
+﻿global using Microsoft.Extensions.DependencyInjection;
+global using System.ComponentModel;
+global using System.ComponentModel.DataAnnotations;
+global using System.Reflection;
+global using System.Security.Cryptography;
+global using System.Text;
+global using UserManagement.Domain.Attribute;
+global using UserManagement.Domain.Services.Abstraction;
+global using UserManagement.Domain.Models.ContactOrganization;
+global using UserManagement.Domain.Models.OrganizationLocation;
+global using UserManagement.Domain.Models.Service;
+global using UserManagement.Domain.Models.Providers;

@@ -1,0 +1,931 @@
+2024-01-03 10:09:08.695 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Invalid operation. The connection is closed.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Application.Services.Implementation.RoleService.DeleteRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\RoleService.cs:line 45
+   at UserManagement.API.Controller.Role.RoleController.<>c.<<RegisterRoleEndpoints>b__0_4>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Role\RoleController.cs:line 58
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 10:11:42.413 +05:30 [ERR] Exception occurred: System.InvalidOperationException: BeginExecuteReader requires an open and available Connection. The connection's current state is connecting.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Application.Services.Implementation.RoleService.DeleteRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\RoleService.cs:line 45
+   at UserManagement.API.Controller.Role.RoleController.<>c.<<RegisterRoleEndpoints>b__0_4>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Role\RoleController.cs:line 58
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 10:22:29.991 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'DeleteRole' expects parameter '@DeletedId', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.RoleRepository.DeleteRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\RoleRepository.cs:line 40
+   at UserManagement.Application.Services.Implementation.RoleService.DeleteRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\RoleService.cs:line 45
+   at UserManagement.API.Controller.Role.RoleController.<>c.<<RegisterRoleEndpoints>b__0_4>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Role\RoleController.cs:line 58
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:59932854-dc01-42f1-b3bc-40e57c509076
+Error Number:201,State:4,Class:16
+
+2024-01-03 10:40:24.692 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'DeleteUserRole'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 44
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 46
+   at UserManagement.Application.Services.Implementation.UserRoleService.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 31
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_2>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 40
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:44532fda-8aaa-4c6e-a4ac-a9425ee752f5
+Error Number:2812,State:62,Class:16
+
+2024-01-03 10:40:40.724 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'DeleteUserRole'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 44
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 46
+   at UserManagement.Application.Services.Implementation.UserRoleService.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 31
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_2>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 40
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:44532fda-8aaa-4c6e-a4ac-a9425ee752f5
+Error Number:2812,State:62,Class:16
+
+2024-01-03 10:40:53.707 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'DeleteUserRole'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 44
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 46
+   at UserManagement.Application.Services.Implementation.UserRoleService.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 31
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_2>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 40
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:44532fda-8aaa-4c6e-a4ac-a9425ee752f5
+Error Number:2812,State:62,Class:16
+
+2024-01-03 10:42:00.419 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'DeleteUserRole'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 44
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 46
+   at UserManagement.Application.Services.Implementation.UserRoleService.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 31
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_2>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 40
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:44532fda-8aaa-4c6e-a4ac-a9425ee752f5
+Error Number:2812,State:62,Class:16
+
+2024-01-03 10:42:10.446 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'DeleteUserRole'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 44
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 46
+   at UserManagement.Application.Services.Implementation.UserRoleService.DeleteUserRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 31
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_2>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 40
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:44532fda-8aaa-4c6e-a4ac-a9425ee752f5
+Error Number:2812,State:62,Class:16
+
+2024-01-03 10:44:07.703 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'DeleteRole' expects parameter '@DeletedId', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.RoleRepository.DeleteRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\RoleRepository.cs:line 40
+   at UserManagement.Application.Services.Implementation.RoleService.DeleteRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\RoleService.cs:line 45
+   at UserManagement.API.Controller.Role.RoleController.<>c.<<RegisterRoleEndpoints>b__0_4>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Role\RoleController.cs:line 58
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:44532fda-8aaa-4c6e-a4ac-a9425ee752f5
+Error Number:201,State:4,Class:16
+
+2024-01-03 10:44:34.334 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'DeleteRole' expects parameter '@DeletedId', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.RoleRepository.DeleteRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\RoleRepository.cs:line 40
+   at UserManagement.Application.Services.Implementation.RoleService.DeleteRoleAsync(Int32 id, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\RoleService.cs:line 45
+   at UserManagement.API.Controller.Role.RoleController.<>c.<<RegisterRoleEndpoints>b__0_4>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Role\RoleController.cs:line 58
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:44532fda-8aaa-4c6e-a4ac-a9425ee752f5
+Error Number:201,State:4,Class:16
+
+2024-01-03 10:51:29.516 +05:30 [ERR] Exception occurred: Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "LoginUserCommand loginUserCommand" from the request body as JSON.
+ ---> System.Text.Json.JsonException: '0x0A' is invalid within a JSON string. The string should be correctly escaped. Path: $.loginUserViewModel.userName | LineNumber: 2 | BytePositionInLine: 24.
+ ---> System.Text.Json.JsonReaderException: '0x0A' is invalid within a JSON string. The string should be correctly escaped. LineNumber: 2 | BytePositionInLine: 24.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeStringAndValidate(ReadOnlySpan`1 data, Int32 idx)
+   at System.Text.Json.Utf8JsonReader.ConsumeString()
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.ReadAheadPropertyValue(ReadStack& state, Utf8JsonReader& reader, JsonPropertyInfo jsonPropertyInfo)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Converters.SmallObjectWithParameterizedConstructorConverter`5.TryRead[TArg](ReadStack& state, Utf8JsonReader& reader, JsonParameterInfo jsonParameterInfo, TArg& arg)
+   at System.Text.Json.Serialization.Converters.SmallObjectWithParameterizedConstructorConverter`5.ReadAndCacheConstructorArgument(ReadStack& state, Utf8JsonReader& reader, JsonParameterInfo jsonParameterInfo)
+   at System.Text.Json.Serialization.Converters.ObjectWithParameterizedConstructorConverter`1.ReadConstructorArgumentsWithContinuation(ReadStack& state, Utf8JsonReader& reader, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Converters.ObjectWithParameterizedConstructorConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 10:58:11.518 +05:30 [ERR] Exception occurred: Microsoft.AspNetCore.Http.BadHttpRequestException: Failed to read parameter "RefreshTokenCommand refreshTokenCommand" from the request body as JSON.
+ ---> System.Text.Json.JsonException: '0x0A' is invalid within a JSON string. The string should be correctly escaped. Path: $.refreshTokenViewModel.accessToken | LineNumber: 2 | BytePositionInLine: 525.
+ ---> System.Text.Json.JsonReaderException: '0x0A' is invalid within a JSON string. The string should be correctly escaped. LineNumber: 2 | BytePositionInLine: 525.
+   at System.Text.Json.ThrowHelper.ThrowJsonReaderException(Utf8JsonReader& json, ExceptionResource resource, Byte nextByte, ReadOnlySpan`1 bytes)
+   at System.Text.Json.Utf8JsonReader.ConsumeStringAndValidate(ReadOnlySpan`1 data, Int32 idx)
+   at System.Text.Json.Utf8JsonReader.ConsumeString()
+   at System.Text.Json.Utf8JsonReader.ConsumeValue(Byte marker)
+   at System.Text.Json.Utf8JsonReader.ReadSingleSegment()
+   at System.Text.Json.Utf8JsonReader.Read()
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.ReadAheadPropertyValue(ReadStack& state, Utf8JsonReader& reader, JsonPropertyInfo jsonPropertyInfo)
+   at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.Converters.SmallObjectWithParameterizedConstructorConverter`5.TryRead[TArg](ReadStack& state, Utf8JsonReader& reader, JsonParameterInfo jsonParameterInfo, TArg& arg)
+   at System.Text.Json.Serialization.Converters.SmallObjectWithParameterizedConstructorConverter`5.ReadAndCacheConstructorArgument(ReadStack& state, Utf8JsonReader& reader, JsonParameterInfo jsonParameterInfo)
+   at System.Text.Json.Serialization.Converters.ObjectWithParameterizedConstructorConverter`1.ReadConstructorArgumentsWithContinuation(ReadStack& state, Utf8JsonReader& reader, JsonSerializerOptions options)
+   at System.Text.Json.Serialization.Converters.ObjectWithParameterizedConstructorConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
+   at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   --- End of inner exception stack trace ---
+   at System.Text.Json.ThrowHelper.ReThrowWithPath(ReadStack& state, JsonReaderException ex)
+   at System.Text.Json.Serialization.JsonConverter`1.ReadCore(Utf8JsonReader& reader, JsonSerializerOptions options, ReadStack& state)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.ContinueDeserialize(ReadBufferState& bufferState, JsonReaderState& jsonReaderState, ReadStack& readStack)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at System.Text.Json.Serialization.Metadata.JsonTypeInfo`1.DeserializeAsObjectAsync(Stream utf8Json, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.HttpRequestJsonExtensions.ReadFromJsonAsync(HttpRequest request, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.Log.InvalidJsonRequestBody(HttpContext httpContext, String parameterTypeName, String parameterName, Exception exception, Boolean shouldThrow)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<HandleRequestBodyAndCompileRequestDelegateForJson>g__TryReadBodyAsync|102_0(HttpContext httpContext, Type bodyType, String parameterTypeName, String parameterName, Boolean allowEmptyRequestBody, Boolean throwOnBadRequest, JsonTypeInfo jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 11:23:06.372 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_UserRole_UserId". The conflict occurred in database "UserManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 22
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 22
+   at UserManagement.Application.Services.Implementation.UserRoleService.AddUserRoleAsync(AddUserRoleViewModel userRoleViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 19
+   at UserManagement.Application.Handlers.UserRole.CreateUserRoleHandler.Handle(CreateUserRoleCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\UserRole\CreateUserRoleHandler.cs:line 14
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_1>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:ecb2902c-86ff-4a9b-b2be-fa21fcd7e9ce
+Error Number:547,State:0,Class:16
+
+2024-01-03 11:32:15.020 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_UserRole_UserId". The conflict occurred in database "UserManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 22
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 22
+   at UserManagement.Application.Services.Implementation.UserRoleService.AddUserRoleAsync(AddUserRoleViewModel userRoleViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 19
+   at UserManagement.Application.Handlers.UserRole.CreateUserRoleHandler.Handle(CreateUserRoleCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\UserRole\CreateUserRoleHandler.cs:line 14
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_1>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 35
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:1f235336-781a-4c39-a4e0-98faadc759b4
+Error Number:547,State:0,Class:16
+
+2024-01-03 11:33:04.802 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_UserRole_UserId". The conflict occurred in database "UserManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 22
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 22
+   at UserManagement.Application.Services.Implementation.UserRoleService.AddUserRoleAsync(AddUserRoleViewModel userRoleViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 19
+   at UserManagement.Application.Handlers.UserRole.CreateUserRoleHandler.Handle(CreateUserRoleCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\UserRole\CreateUserRoleHandler.cs:line 14
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_1>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 35
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:1f235336-781a-4c39-a4e0-98faadc759b4
+Error Number:547,State:0,Class:16
+
+2024-01-03 11:33:42.893 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_UserRole_UserId". The conflict occurred in database "UserManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 22
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 22
+   at UserManagement.Application.Services.Implementation.UserRoleService.AddUserRoleAsync(AddUserRoleViewModel userRoleViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 19
+   at UserManagement.Application.Handlers.UserRole.CreateUserRoleHandler.Handle(CreateUserRoleCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\UserRole\CreateUserRoleHandler.cs:line 14
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_1>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 35
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:1f235336-781a-4c39-a4e0-98faadc759b4
+Error Number:547,State:0,Class:16
+
+2024-01-03 11:35:40.845 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_UserRole_UserId". The conflict occurred in database "UserManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 22
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 23
+   at UserManagement.Application.Services.Implementation.UserRoleService.AddUserRoleAsync(AddUserRoleViewModel userRoleViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 19
+   at UserManagement.Application.Handlers.UserRole.CreateUserRoleHandler.Handle(CreateUserRoleCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\UserRole\CreateUserRoleHandler.cs:line 14
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_1>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 35
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:3f738d64-8813-4c1d-a40b-7cbb3489682d
+Error Number:547,State:0,Class:16
+
+2024-01-03 11:38:58.671 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_UserRole_UserId". The conflict occurred in database "UserManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken)
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken)
+   at UserManagement.Application.Services.Implementation.UserRoleService.AddUserRoleAsync(AddUserRoleViewModel userRoleViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 19
+   at UserManagement.Application.Handlers.UserRole.CreateUserRoleHandler.Handle(CreateUserRoleCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\UserRole\CreateUserRoleHandler.cs:line 14
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_1>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 35
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:3f738d64-8813-4c1d-a40b-7cbb3489682d
+Error Number:547,State:0,Class:16
+
+2024-01-03 11:40:51.259 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_UserRole_RoleId". The conflict occurred in database "UserManagement", table "dbo.Role", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 27
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 28
+   at UserManagement.Application.Services.Implementation.UserRoleService.AddUserRoleAsync(AddUserRoleViewModel userRoleViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 19
+   at UserManagement.Application.Handlers.UserRole.CreateUserRoleHandler.Handle(CreateUserRoleCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\UserRole\CreateUserRoleHandler.cs:line 14
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_1>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 35
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:c5428ec3-95b8-4782-b570-a0e2ade4bfcd
+Error Number:547,State:0,Class:16
+
+2024-01-03 11:41:34.062 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_UserRole_UserId". The conflict occurred in database "UserManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 27
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 28
+   at UserManagement.Application.Services.Implementation.UserRoleService.AddUserRoleAsync(AddUserRoleViewModel userRoleViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 19
+   at UserManagement.Application.Handlers.UserRole.CreateUserRoleHandler.Handle(CreateUserRoleCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\UserRole\CreateUserRoleHandler.cs:line 14
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_1>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 35
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:c5428ec3-95b8-4782-b570-a0e2ade4bfcd
+Error Number:547,State:0,Class:16
+
+2024-01-03 11:52:21.284 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_UserRole_UserId". The conflict occurred in database "UserManagement", table "dbo.User", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 27
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 28
+   at UserManagement.Application.Services.Implementation.UserRoleService.AddUserRoleAsync(AddUserRoleViewModel userRoleViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 19
+   at UserManagement.Application.Handlers.UserRole.CreateUserRoleHandler.Handle(CreateUserRoleCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\UserRole\CreateUserRoleHandler.cs:line 14
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_1>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 35
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:c5428ec3-95b8-4782-b570-a0e2ade4bfcd
+Error Number:547,State:0,Class:16
+
+2024-01-03 11:53:01.788 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904):  
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 27
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 28
+   at UserManagement.Application.Services.Implementation.UserRoleService.AddUserRoleAsync(AddUserRoleViewModel userRoleViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 19
+   at UserManagement.Application.Handlers.UserRole.CreateUserRoleHandler.Handle(CreateUserRoleCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\UserRole\CreateUserRoleHandler.cs:line 14
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_1>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 35
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:1a507fb1-6f27-481d-bbbd-d6c2b3fc378f
+Error Number:50001,State:16,Class:16
+
+2024-01-03 11:54:08.740 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904):  
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 25
+   at UserManagement.Infrastructure.Repository.UserRoleRepository.AddUserRoleAsync(UserRole userrole, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\UserRoleRepository.cs:line 26
+   at UserManagement.Application.Services.Implementation.UserRoleService.AddUserRoleAsync(AddUserRoleViewModel userRoleViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\UserRoleService.cs:line 19
+   at UserManagement.Application.Handlers.UserRole.CreateUserRoleHandler.Handle(CreateUserRoleCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\UserRole\CreateUserRoleHandler.cs:line 14
+   at UserManagement.API.Controller.UserRole.UserRoleController.<>c.<<RegisterUserRoleEndpoints>b__0_1>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\UserRole\UserRoleController.cs:line 35
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:347dbcfb-5ff9-42b2-92b9-5fb504fa3c7f
+Error Number:50001,State:16,Class:16
+
+2024-01-03 11:55:58.165 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 29
+   at UserManagement.Application.Handlers.LoginUser.LoginUserHandler.Handle(LoginUserCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\LoginUser\LoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 11:57:08.375 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 29
+   at UserManagement.Application.Handlers.LoginUser.LoginUserHandler.Handle(LoginUserCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\LoginUser\LoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 12:05:10.937 +05:30 [ERR] Exception occurred: System.NullReferenceException: Object reference not set to an instance of an object.
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 17:48:29.107 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.ContactOrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.ContactOrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method6(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method63(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 17:48:34.143 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.ContactOrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.ContactOrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method6(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method63(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 17:48:57.550 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'GetAllOrganization'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.GetAllOrganizationAsync(CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\OrganizationRepository.cs:line 52
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.GetAllOrganizationAsync(CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\OrganizationRepository.cs:line 52
+   at UserManagement.Application.Services.Implementation.OrganizationService.GetAllOrganizationAsync(CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\OrganizationService.cs:line 41
+   at UserManagement.API.Controller.Organization.OrganizationController.<>c.<<RegisterOrganizationEndpoints>b__0_0>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Organization\OrganizationController.cs:line 18
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:1666ea50-5fb8-480b-9756-2c9881e07360
+Error Number:2812,State:62,Class:16
+
+2024-01-03 17:49:22.814 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method68(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 17:49:30.821 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method68(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 18:01:23.207 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'GetAllOrganization'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.GetAllOrganizationAsync(CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\OrganizationRepository.cs:line 52
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.GetAllOrganizationAsync(CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\OrganizationRepository.cs:line 52
+   at UserManagement.Application.Services.Implementation.OrganizationService.GetAllOrganizationAsync(CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\OrganizationService.cs:line 41
+   at UserManagement.API.Controller.Organization.OrganizationController.<>c.<<RegisterOrganizationEndpoints>b__0_0>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Organization\OrganizationController.cs:line 18
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:abde75a1-1c13-45a8-a5c5-883034cf4cd7
+Error Number:2812,State:62,Class:16
+
+2024-01-03 18:02:09.256 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'GetAllOrganization'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.GetAllOrganizationAsync(CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\OrganizationRepository.cs:line 52
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.GetAllOrganizationAsync(CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\OrganizationRepository.cs:line 52
+   at UserManagement.Application.Services.Implementation.OrganizationService.GetAllOrganizationAsync(CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\OrganizationService.cs:line 41
+   at UserManagement.API.Controller.Organization.OrganizationController.<>c.<<RegisterOrganizationEndpoints>b__0_0>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Organization\OrganizationController.cs:line 18
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:abde75a1-1c13-45a8-a5c5-883034cf4cd7
+Error Number:2812,State:62,Class:16
+
+2024-01-03 18:05:08.170 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method68(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 18:05:25.199 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method68(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 18:05:28.109 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method68(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 18:06:06.411 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method68(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 18:06:07.520 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method68(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 18:06:13.333 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method68(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 18:06:14.032 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method68(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 18:06:14.342 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method68(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 18:06:14.564 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method68(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 18:06:34.470 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method68(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 18:06:45.565 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.OrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method7(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method68(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 18:07:37.088 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'EditOrganization' expects parameter '@Id', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.EditOrganizationAsync(Organization organization, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\OrganizationRepository.cs:line 44
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.EditOrganizationAsync(Organization organization, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\OrganizationRepository.cs:line 44
+   at UserManagement.Application.Services.Implementation.OrganizationService.EditOrganizationAsync(OrganizationViewModel organizationViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\OrganizationService.cs:line 33
+   at UserManagement.API.Controller.Organization.OrganizationController.<>c.<<RegisterOrganizationEndpoints>b__0_3>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Organization\OrganizationController.cs:line 59
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:18f5d535-ba8c-4a17-bd3d-02c2878e8884
+Error Number:201,State:4,Class:16
+
+2024-01-03 18:15:11.430 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.ContactOrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.ContactOrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method6(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method63(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 18:15:42.205 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Unable to resolve service for type 'FluentValidation.IValidator`1[UserManagement.ViewModel.Models.ContactOrganization.ContactOrganizationViewModel]' while attempting to activate 'UserManagement.Application.Filters.ValidationFilter`1[UserManagement.ViewModel.Models.ContactOrganization.ContactOrganizationViewModel]'.
+   at Microsoft.Extensions.DependencyInjection.ActivatorUtilities.ThrowHelperUnableToResolveService(Type type, Type requiredBy)
+   at lambda_method6(Closure, IServiceProvider, Object[])
+   at Microsoft.AspNetCore.Http.EndpointFilterExtensions.<>c__DisplayClass1_1`2.<AddEndpointFilter>b__1(EndpointFilterInvocationContext context)
+   at lambda_method63(Closure, Object, HttpContext, Object)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-03 18:39:08.326 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'AddContactOrganization' expects parameter '@ContactId', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryRowAsync[T](IDbConnection cnn, Row row, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 489
+   at UserManagement.Infrastructure.Repository.ContactOrganizationRepository.AddContactOrganizationAsync(ContactOrganization contactOrganization, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactOrganizationRepository.cs:line 25
+   at UserManagement.Infrastructure.Repository.ContactOrganizationRepository.AddContactOrganizationAsync(ContactOrganization contactOrganization, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactOrganizationRepository.cs:line 26
+   at UserManagement.Application.Services.Implementation.ContactOrganizationService.AddContactOrganizationAsync(ContactOrganizationViewModel contactOrganizationViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\ContactOrganizationService.cs:line 22
+   at UserManagement.Application.Handlers.ContactOrganization.CreateContactOrganizationHandler.Handle(CreateContactOrganizationCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\ContactOrganization\CreateContactOrganizationHandler.cs:line 17
+   at UserManagement.API.Controller.ContactOrganization.ContactOrganizationController.<>c.<<RegisterContactOrganizationEndpoints>b__0_1>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\ContactOrganization\ContactOrganizationController.cs:line 43
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:e286a47e-8150-496c-a370-e2cb3d9089d6
+Error Number:201,State:4,Class:16
+

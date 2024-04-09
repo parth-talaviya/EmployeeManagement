@@ -1,0 +1,306 @@
+2024-01-04 10:12:27.361 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'AddOrganization' expects parameter '@Name', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.AddOrganizationAsync(Organization organization, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\OrganizationRepository.cs:line 23
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.AddOrganizationAsync(Organization organization, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\OrganizationRepository.cs:line 23
+   at UserManagement.Application.Services.Implementation.OrganizationService.AddOrganizationAsync(OrganizationViewModel organizationViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\OrganizationService.cs:line 20
+   at UserManagement.Application.Handlers.Organization.CreateOrganizationHandler.Handle(CreateOrganizationCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\Organization\CreateOrganizationHandler.cs:line 17
+   at UserManagement.API.Controller.Organization.OrganizationController.<>c.<<RegisterOrganizationEndpoints>b__0_2>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Organization\OrganizationController.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:5c1adc6b-e20c-4078-b1c0-f2559a9c7272
+Error Number:201,State:4,Class:16
+
+2024-01-04 10:13:48.477 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'AddOrganization' expects parameter '@Name', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.AddOrganizationAsync(Organization organization, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\OrganizationRepository.cs:line 23
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.AddOrganizationAsync(Organization organization, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\OrganizationRepository.cs:line 23
+   at UserManagement.Application.Services.Implementation.OrganizationService.AddOrganizationAsync(OrganizationViewModel organizationViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\OrganizationService.cs:line 20
+   at UserManagement.Application.Handlers.Organization.CreateOrganizationHandler.Handle(CreateOrganizationCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\Organization\CreateOrganizationHandler.cs:line 17
+   at UserManagement.API.Controller.Organization.OrganizationController.<>c.<<RegisterOrganizationEndpoints>b__0_2>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Organization\OrganizationController.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:5c1adc6b-e20c-4078-b1c0-f2559a9c7272
+Error Number:201,State:4,Class:16
+
+2024-01-04 10:16:05.186 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'AddOrganization' expects parameter '@Name', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.AddOrganizationAsync(Organization organization, CancellationToken cancellationToken)
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.AddOrganizationAsync(Organization organization, CancellationToken cancellationToken)
+   at UserManagement.Application.Services.Implementation.OrganizationService.AddOrganizationAsync(OrganizationViewModel organizationViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\OrganizationService.cs:line 20
+   at UserManagement.Application.Handlers.Organization.CreateOrganizationHandler.Handle(CreateOrganizationCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\Organization\CreateOrganizationHandler.cs:line 17
+   at UserManagement.API.Controller.Organization.OrganizationController.<>c.<<RegisterOrganizationEndpoints>b__0_2>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Organization\OrganizationController.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:9ff73aa0-7b9b-4d55-a9c2-4a7eae1207a5
+Error Number:201,State:4,Class:16
+
+2024-01-04 10:17:41.600 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'AddOrganization' expects parameter '@Name', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.AddOrganizationAsync(Organization organization, CancellationToken cancellationToken)
+   at UserManagement.Infrastructure.Repository.OrganizationRepository.AddOrganizationAsync(Organization organization, CancellationToken cancellationToken)
+   at UserManagement.Application.Services.Implementation.OrganizationService.AddOrganizationAsync(OrganizationViewModel organizationViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\OrganizationService.cs:line 20
+   at UserManagement.Application.Handlers.Organization.CreateOrganizationHandler.Handle(CreateOrganizationCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\Organization\CreateOrganizationHandler.cs:line 17
+   at UserManagement.API.Controller.Organization.OrganizationController.<>c.<<RegisterOrganizationEndpoints>b__0_2>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Organization\OrganizationController.cs:line 50
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<TaskOfTToValueTaskOfObject>g__ExecuteAwaited|92_0[T](Task`1 task)
+   at UserManagement.Application.Filters.ValidationFilter`1.InvokeAsync(EndpointFilterInvocationContext context, EndpointFilterDelegate next) in D:\UserManagementSoham\UserManagement.Application\Filters\ValidationFilter.cs:line 32
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<ExecuteValueTaskOfObject>g__ExecuteAwaited|129_0(ValueTask`1 valueTask, HttpContext httpContext, JsonTypeInfo`1 jsonTypeInfo)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:9ff73aa0-7b9b-4d55-a9c2-4a7eae1207a5
+Error Number:201,State:4,Class:16
+
+2024-01-04 12:15:37.354 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'AddContact'.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at UserManagement.Infrastructure.Repository.ContactDetailsRepository.AddContactDetailAsync(ContactDetails contactDetails, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactDetailsRepository.cs:line 19
+   at UserManagement.Infrastructure.Repository.ContactDetailsRepository.AddContactDetailAsync(ContactDetails contactDetails, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactDetailsRepository.cs:line 19
+   at UserManagement.Application.Services.Implementation.ContactDetailService.CreateContactAsync(ContactDetailsViewModel contactDetailViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\ContactDetailService.cs:line 18
+   at UserManagement.Application.Handlers.ContactDetail.AddContactHandler.Handle(CreateContactCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\ContactDetail\AddContactHandler.cs:line 14
+   at UserManagement.API.Controller.Contact.ContactController.<>c.<<RegisterContactEndpoints>b__0_2>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Contact\ContactController.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:91d23eeb-e644-47c3-91bd-8d471c8ef2a0
+Error Number:2812,State:62,Class:16
+
+2024-01-04 12:29:17.205 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'AddContact' expects parameter '@FirstName', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at UserManagement.Infrastructure.Repository.ContactDetailsRepository.AddContactDetailAsync(ContactDetails contactDetails, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactDetailsRepository.cs:line 19
+   at UserManagement.Infrastructure.Repository.ContactDetailsRepository.AddContactDetailAsync(ContactDetails contactDetails, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactDetailsRepository.cs:line 19
+   at UserManagement.Application.Services.Implementation.ContactDetailService.CreateContactAsync(ContactDetailsViewModel contactDetailViewModel, CancellationToken cancellationToken)
+   at UserManagement.Application.Handlers.ContactDetail.AddContactHandler.Handle(CreateContactCommand request, CancellationToken cancellationToken)
+   at UserManagement.API.Controller.Contact.ContactController.<>c.<<RegisterContactEndpoints>b__0_2>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Contact\ContactController.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:2f70b657-2417-4ad8-ab2e-865ffe8487fb
+Error Number:201,State:4,Class:16
+
+2024-01-04 12:31:00.475 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'AddContact' expects parameter '@FirstName', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at UserManagement.Infrastructure.Repository.ContactDetailsRepository.AddContactDetailAsync(ContactDetails contactDetails, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactDetailsRepository.cs:line 19
+   at UserManagement.Infrastructure.Repository.ContactDetailsRepository.AddContactDetailAsync(ContactDetails contactDetails, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactDetailsRepository.cs:line 19
+   at UserManagement.Application.Services.Implementation.ContactDetailService.CreateContactAsync(ContactDetailsViewModel contactDetailViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\ContactDetailService.cs:line 18
+   at UserManagement.Application.Handlers.ContactDetail.AddContactHandler.Handle(CreateContactCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\ContactDetail\AddContactHandler.cs:line 14
+   at UserManagement.API.Controller.Contact.ContactController.<>c.<<RegisterContactEndpoints>b__0_2>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Contact\ContactController.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:425ae3a8-31dd-4e7f-b26b-47c58d1f6599
+Error Number:201,State:4,Class:16
+
+2024-01-04 12:33:41.985 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Procedure or function 'AddContact' expects parameter '@FirstName', which was not supplied.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString, Boolean isInternal, Boolean forDescribeParameterEncryption, Boolean shouldCacheForAlwaysEncrypted)
+   at Microsoft.Data.SqlClient.SqlCommand.CompleteAsyncExecuteReader(Boolean isInternal, Boolean forDescribeParameterEncryption)
+   at Microsoft.Data.SqlClient.SqlCommand.InternalEndExecuteNonQuery(IAsyncResult asyncResult, Boolean isInternal, String endMethod)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryInternal(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.EndExecuteNonQueryAsync(IAsyncResult asyncResult)
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<InternalExecuteNonQueryAsync>b__210_1(IAsyncResult result)
+   at System.Threading.Tasks.TaskFactory`1.FromAsyncCoreLogic(IAsyncResult iar, Func`2 endFunction, Action`1 endAction, Task`1 promise, Boolean requiresSynchronization)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.ExecuteImplAsync(IDbConnection cnn, CommandDefinition command, Object param) in /_/Dapper/SqlMapper.Async.cs:line 662
+   at UserManagement.Infrastructure.Repository.ContactDetailsRepository.AddContactDetailAsync(ContactDetails contactDetails, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactDetailsRepository.cs:line 21
+   at UserManagement.Infrastructure.Repository.ContactDetailsRepository.AddContactDetailAsync(ContactDetails contactDetails, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactDetailsRepository.cs:line 21
+   at UserManagement.Application.Services.Implementation.ContactDetailService.CreateContactAsync(ContactDetailsViewModel contactDetailViewModel, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\ContactDetailService.cs:line 18
+   at UserManagement.Application.Handlers.ContactDetail.AddContactHandler.Handle(CreateContactCommand request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\ContactDetail\AddContactHandler.cs:line 14
+   at UserManagement.API.Controller.Contact.ContactController.<>c.<<RegisterContactEndpoints>b__0_2>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Contact\ContactController.cs:line 38
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:e6212d21-8b1a-4166-ab85-83c5b4023d22
+Error Number:201,State:4,Class:16
+
+2024-01-04 12:49:12.080 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'SearchContactDetailsWithPagination'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at UserManagement.Infrastructure.Repository.ContactDetailsRepository.GetAllContactDetailAsync(Int32 PageNumber, Int32 PageSize, String SearchText, String SortColumn, String SortOrder, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactDetailsRepository.cs:line 59
+   at UserManagement.Infrastructure.Repository.ContactDetailsRepository.GetAllContactDetailAsync(Int32 PageNumber, Int32 PageSize, String SearchText, String SortColumn, String SortOrder, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactDetailsRepository.cs:line 59
+   at UserManagement.Application.Services.Implementation.ContactDetailService.GetAllContactAsync(Int32 PageNumber, Int32 PageSize, String SearchText, String SortColumn, String SortOrder, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\ContactDetailService.cs:line 41
+   at UserManagement.Application.Handlers.ContactDetail.GetAllContactHandler.Handle(GetAllContactQuery request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\ContactDetail\GetAllContactHandler.cs:line 20
+   at UserManagement.API.Controller.Contact.ContactController.<>c.<<RegisterContactEndpoints>b__0_0>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Contact\ContactController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:254dc3a9-bfc7-40b6-b338-81c2c0bcc3c1
+Error Number:2812,State:62,Class:16
+
+2024-01-04 12:49:45.783 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'SearchContactDetailsWithPagination'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at UserManagement.Infrastructure.Repository.ContactDetailsRepository.GetAllContactDetailAsync(Int32 PageNumber, Int32 PageSize, String SearchText, String SortColumn, String SortOrder, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactDetailsRepository.cs:line 59
+   at UserManagement.Infrastructure.Repository.ContactDetailsRepository.GetAllContactDetailAsync(Int32 PageNumber, Int32 PageSize, String SearchText, String SortColumn, String SortOrder, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactDetailsRepository.cs:line 59
+   at UserManagement.Application.Services.Implementation.ContactDetailService.GetAllContactAsync(Int32 PageNumber, Int32 PageSize, String SearchText, String SortColumn, String SortOrder, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\ContactDetailService.cs:line 41
+   at UserManagement.Application.Handlers.ContactDetail.GetAllContactHandler.Handle(GetAllContactQuery request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\ContactDetail\GetAllContactHandler.cs:line 20
+   at UserManagement.API.Controller.Contact.ContactController.<>c.<<RegisterContactEndpoints>b__0_0>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Contact\ContactController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:254dc3a9-bfc7-40b6-b338-81c2c0bcc3c1
+Error Number:2812,State:62,Class:16
+
+2024-01-04 12:53:54.538 +05:30 [ERR] Exception occurred: Microsoft.Data.SqlClient.SqlException (0x80131904): Could not find stored procedure 'SearchContactDetailsWithPagination'.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__211_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Dapper.SqlMapper.QueryAsync[T](IDbConnection cnn, Type effectiveType, CommandDefinition command) in /_/Dapper/SqlMapper.Async.cs:line 434
+   at UserManagement.Infrastructure.Repository.ContactDetailsRepository.GetAllContactDetailAsync(Int32 PageNumber, Int32 PageSize, String SearchText, String SortColumn, String SortOrder, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactDetailsRepository.cs:line 61
+   at UserManagement.Infrastructure.Repository.ContactDetailsRepository.GetAllContactDetailAsync(Int32 PageNumber, Int32 PageSize, String SearchText, String SortColumn, String SortOrder, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Infrastructure\Repository\ContactDetailsRepository.cs:line 61
+   at UserManagement.Application.Services.Implementation.ContactDetailService.GetAllContactAsync(Int32 PageNumber, Int32 PageSize, String SearchText, String SortColumn, String SortOrder, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Services\Implementation\ContactDetailService.cs:line 41
+   at UserManagement.Application.Handlers.ContactDetail.GetAllContactHandler.Handle(GetAllContactQuery request, CancellationToken cancellationToken) in D:\UserManagementSoham\UserManagement.Application\Handlers\ContactDetail\GetAllContactHandler.cs:line 20
+   at UserManagement.API.Controller.Contact.ContactController.<>c.<<RegisterContactEndpoints>b__0_0>d.MoveNext() in D:\UserManagementSoham\UserManagement.Api\Controller\Contact\ContactController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+ClientConnectionId:1d30ff5e-a962-41c4-9790-d5cd69978976
+Error Number:2812,State:62,Class:16
+

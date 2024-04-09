@@ -1,0 +1,273 @@
+2024-01-01 21:27:07.573 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:31:41.867 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:37:51.720 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:38:45.397 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:38:46.026 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:38:46.178 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:38:46.346 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:38:46.515 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:38:46.656 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:38:46.879 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:43:46.964 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:44:21.312 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:44:22.431 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:45:11.583 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:47:24.804 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:48:07.586 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:48:08.966 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:48:10.191 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:50:20.360 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken)
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken)
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:55:31.182 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
+2024-01-01 21:55:33.046 +05:30 [ERR] Exception occurred: System.InvalidOperationException: Nullable object must have a value.
+   at System.Nullable`1.get_Value()
+   at UserManagement.Application.Services.Implementation.LoginUserService.AuthenticateLoginUserAsync(LoginRequestViewModel loginViewModel, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Services\Implementation\LoginUserService.cs:line 28
+   at UserManagement.Application.Handlers.LoginUser.AuthenticateLoginUserHandler.Handle(AuthenticateLoginUserCommand request, CancellationToken cancellationToken) in F:\UserManagement\UserManagement.Application\Handlers\LoginUser\AuthenticateLoginUserHandler.cs:line 14
+   at UserManagement.API.Controller.LoginUser.LoginUserController.<>c.<<RegisterLoginUserEndpoints>b__0_0>d.MoveNext() in F:\UserManagement\UserManagement.Api\Controller\LoginUser\LoginUserController.cs:line 13
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.ExecuteTaskResult[T](Task`1 task, HttpContext httpContext)
+   at Microsoft.AspNetCore.Http.RequestDelegateFactory.<>c__DisplayClass102_2.<<HandleRequestBodyAndCompileRequestDelegateForJson>b__2>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.ExceptionHandlerMiddlewareImpl.<Invoke>g__Awaited|10_0(ExceptionHandlerMiddlewareImpl middleware, HttpContext context, Task task)
+
